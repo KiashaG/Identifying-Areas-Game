@@ -1,0 +1,75 @@
+﻿<Window x:Class="PROG7312_PART2.IdentifyingAreas_SolutionGuide_"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG7312_PART2"
+        mc:Ignorable="d"
+         
+       
+
+      Title="IDENTIFYING AREAS" Height="570" Width="1190" Background="Transparent">
+    <Canvas Name="myCanvas" Background="Lavender">
+
+
+
+        <!--Label banners for call number and description-->
+        <Label Name="SolutionGuide" FontSize="25" Canvas.Left="10" Visibility="Visible" Background="Lavender"  Content="SOLUTION GUIDE" FontStyle="Oblique" Canvas.Top="10" Width="279" HorizontalContentAlignment="Center" Height="45" FontWeight="Bold" Foreground="MediumPurple"/>
+
+
+
+        <Image Name="solutionImage" Source="Images/SolutionGuideImage.png" Stretch="Uniform" Canvas.Left="525" Width="620" Height="357" Canvas.Top="44" />
+
+
+
+
+        <Border Width="449"  Visibility="Visible" Height="87" CornerRadius="10"  Canvas.Left="50" Canvas.Top="205" >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                    <GradientStop Color="MediumPurple" Offset="0.0"/>
+                    <GradientStop Color="LightCoral" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+        </Border>
+
+        <Border Width="449"  Visibility="Visible" Height="104" CornerRadius="10"  Canvas.Left="50" Canvas.Top="297" >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                    <GradientStop Color="MediumPurple" Offset="0.0"/>
+                    <GradientStop Color="LightCoral" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+        </Border>
+        <Border Width="449"  Visibility="Visible" Height="139" CornerRadius="10"  Canvas.Left="50" Canvas.Top="60" >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                    <GradientStop Color="MediumPurple" Offset="0.0"/>
+                    <GradientStop Color="LightCoral" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+        </Border>
+
+
+
+
+
+        <TextBox TextWrapping="Wrap" FontSize="20" Text="In the table diagram on the left, the call numbers (Column A) are correctly matched with the corresponding call description (Column B)" Background="Transparent" BorderBrush="Transparent" FontStyle="Italic" Canvas.Left="68" Canvas.Top="76" Height="107" Width="415" RenderTransformOrigin="0.5,0.5"/>
+        <TextBox TextWrapping="Wrap" FontSize="20" Text="Study this solution guide before attempting the game" Background="Transparent" BorderBrush="Transparent" FontStyle="Italic" Canvas.Left="68" Canvas.Top="220" Height="56" Width="356" RenderTransformOrigin="0.062,5.351"/>
+        <TextBox TextWrapping="Wrap" FontSize="20" Text="After studying the solution guide, proceed by clicking on the start button to continue with the game." Background="Transparent" BorderBrush="Transparent" FontStyle="Italic" Canvas.Left="68" Canvas.Top="313" Height="88" Width="415" RenderTransformOrigin="0.746,-0.674"/>
+
+
+
+        <Button Background="CornflowerBlue" FontSize="18"  Name="BackBtn" Width="170" Height="50" Content="EXIT" Tag="0" Canvas.Left="254" Canvas.Top="454" FontStyle="Oblique" Click="Exit"/>
+
+        <Button Background="MediumPurple" FontSize="18"  Name="NextQuestBtn" Width="170" Height="50" Content="START" Tag="0" Canvas.Left="50" Canvas.Top="454" FontStyle="Oblique" Click="Start"/>
+
+
+
+
+    </Canvas>
+
+</Window>
+ 

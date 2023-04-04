@@ -1,0 +1,90 @@
+﻿<Window x:Class="PROG7312_PART2.IdentifyingAreas"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG7312_PART2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800" Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True">
+
+    <!--// This method was adapted from modern user interface Youtube video 
+   // https://www.youtube.com/watch?v=OJygSefHVr0
+   // Payload
+   // https://www.youtube.com/channel/UCOoKt2u-bE1NuELXSFaEdUw//
+   // This method was adapted from modern Ui youTube tutorial
+   // https://www.youtube.com/watch?v=PzP8mw7JUzI
+   // Payload
+   // https://www.youtube.com/channel/UCOoKt2u-bE1NuELXSFaEdUw-->
+
+    <Border Background="WhiteSmoke"
+            CornerRadius="20">
+
+        <StackPanel Margin="32,10,0,0">
+            <TextBlock Text="IDENTIFYING AREAS" Foreground="DarkCyan" FontSize="28" HorizontalAlignment="Left" Margin="0,0,0,20" FontFamily="Bold" FontStyle="Oblique" />
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Border Width="673" Height="200" CornerRadius="10" Margin="45,0,0,0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="Teal" Offset="0.0"/>
+                            <GradientStop Color="CornflowerBlue" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Image Margin="37,31,33,29" Source="/Images/TasksIcon.png"/>
+                </Border>
+                <Border Width="22" Height="200">
+
+
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"/>
+                    </Border.Clip>
+
+
+
+
+
+
+
+
+
+
+                </Border>
+            </StackPanel>
+
+
+            <StackPanel>
+
+            </StackPanel>
+
+            <StackPanel>
+
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="15,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+
+
+                <TextBlock Text="CATEGORIES" Foreground="DarkCyan" FontSize="15" Margin="0,0,0,10" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal" Margin="134,0,138,0">
+                    <Border Width="150" Height="150" Background="#844eff" CornerRadius="10" Margin="0">
+                        <Button Content="Start" Width="100" Height="50" Margin="23,52,27.4,48.4" Foreground="White" Background="CornflowerBlue" FontStyle="Oblique" Click="Start"/>
+                    </Border>
+                    <Border Width="150" Height="150" Background="Aqua" CornerRadius="10" >
+                        <Button Content="Solution Guide" Width="100" Height="50" Margin="23,52,27.4,48.4" Foreground="White" Background="DarkCyan" FontStyle="Oblique" Click="Solution_Guide"/>
+                    </Border>
+                 
+                    <Border Width="150" Height="150" Background="CornflowerBlue" CornerRadius="10">
+                        <Button Content="EXIT" Width="100" Height="50" Margin="26,52,24.4,48.4" Foreground="White" Background="LightBlue" FontStyle="Oblique" Click="Exit"/>
+                    </Border>
+
+                </StackPanel>
+
+            </StackPanel>
+
+
+        </StackPanel>
+    </Border>
+</Window>
